@@ -15,7 +15,7 @@
         {% for i in anime.files.all %}
         <div class="box" style="margin-top: 20px;">
             <label for="download">Download here: {{anime.manga.url}}</label>
-            <a href="https://manga-world.up.railway.app/{{i.pdf.url}}" download>Download</a>
+            <a href="{{i.pdf.url}}" download>Download</a>
         </div>
         {% endfor %}
     </div>
